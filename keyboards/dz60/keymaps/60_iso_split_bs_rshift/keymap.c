@@ -26,7 +26,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_LSFT, KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, KC_RSFT, KC_GRV,
         KC_LCTL, KC_LALT, MO(1), KC_SPC, MO(1), KC_RALT, KC_RCTL, KC_LGUI 
     ),
-/* Alternate layer with number pad and navigation keys
+/* Alternate layer with number pad (P) and navigation keys
  * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┐
  * │NLK│P 1│P 2│P 3│P 4│P 5│P 6│P 7│P 8│P 9│P 0│P -│P +│ARL│ARR│
  * ├───┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴───┤
