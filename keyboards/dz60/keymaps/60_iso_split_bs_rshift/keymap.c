@@ -36,7 +36,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ├──────┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴───┴┬───┤
  * │ SHIFT  │   │   │   │   │   │   │   │   │P .│P /│ SHFT │MNU│
  * ├────┬───┴┬──┴─┬─┴───┴───┴───┴───┴───┴──┬┴───┼───┴┬────┬┴───┤
- * │LCTL│LALT│    │                        │    │RALT│RCTL│FN 2│
+ * │LCTL│LALT│    │           _            │    │RALT│RCTL│FN 2│
  * └────┴────┴────┴────────────────────────┴────┴────┴────┴────┘
 */
     [1] = LAYOUT_60_iso_split_bs_rshift(
@@ -44,7 +44,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_INS, KC_HOME, KC_UP, KC_END, KC_PGUP, XXXXXXX, XXXXXXX, XXXXXXX, KC_PSCR, KC_SCRL, KC_PAUS, KC_PSLS, KC_PAST,
         XXXXXXX, KC_LEFT, KC_DOWN, KC_RIGHT, KC_PGDN, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_PENT,
         KC_LSFT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_PDOT, KC_PSLS, KC_RSFT, KC_MENU,
-        KC_LCTL, KC_LALT, XXXXXXX, XXXXXXX, XXXXXXX, KC_RALT, KC_RCTL, MO(2) 
+        KC_LCTL, KC_LALT, XXXXXXX, S(KC_MINS), XXXXXXX, KC_RALT, KC_RCTL, MO(2) 
     ),
 /* Alternate layer with navigation and funcion keys
  * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┐
@@ -56,7 +56,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ├──────┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴───┴┬───┤
  * │ SHIFT  │   │   │   │   │RGB│   │   │   │   │   │ SHFT │   │
  * ├────┬───┴┬──┴─┬─┴───┴───┴───┴───┴───┴──┬┴───┼───┴┬────┬┴───┤
- * │LCTL│LALT│    │                        │    │RALT│RCTL│    │
+ * │LCTL│LALT│    │           —            │    │RALT│RCTL│    │
  * └────┴────┴────┴────────────────────────┴────┴────┴────┴────┘
 */
     [2] = LAYOUT_60_iso_split_bs_rshift(
@@ -64,7 +64,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
         KC_LSFT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, RGB_TOG, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_RSFT, XXXXXXX,
-        KC_LCTL, KC_LALT,XXXXXXX, XXXXXXX, XXXXXXX, KC_RALT, KC_RCTL, XXXXXXX 
+        KC_LCTL, KC_LALT,XXXXXXX, UC(2014), XXXXXXX, KC_RALT, KC_RCTL, XXXXXXX 
     ),
 };
 
