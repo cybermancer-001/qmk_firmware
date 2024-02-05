@@ -17,26 +17,26 @@
         "pin": "B6",
         "levels": 5
     },
-    "indicators": {
-        "caps_lock": "B2",
-        "on_state": 0
-    },
+    // "indicators": {
+    //     "caps_lock": "B2",
+    //     "on_state": 0
+    // },
     "rgblight": {
         "saturation_steps": 8,
         "brightness_steps": 8,
         "led_count": 16,
         "sleep": true,
         "animations": {
-            "breathing": true,
-            "rainbow_mood": true,
-            "rainbow_swirl": true,
-            "snake": true,
-            "knight": true,
-            "christmas": true,
+            "breathing": false,
+            "rainbow_mood": false,
+            "rainbow_swirl": false,
+            "snake": false,
+            "knight": false,
+            "christmas": false,
             "static_gradient": true,
-            "rgb_test": true,
-            "alternating": true,
-            "twinkle": true
+            "rgb_test": false,
+            "alternating": false,
+            "twinkle": false
         }
     },
     "ws2812": {
@@ -44,6 +44,10 @@
     },
     "processor": "atmega32u4",
     "bootloader": "atmel-dfu",
+    "bootmagic": {
+        "enabled": true,
+        "matrix": [0, 0]
+    },
     "community_layouts": ["60_ansi", "60_ansi_arrow_split_bs_7u_spc", "60_ansi_arrow", "60_ansi_split_bs_rshift", "60_hhkb", "60_iso", "60_abnt2", "60_tsangan_hhkb", "60_iso_split_bs_rshift"],
     "layouts": {
         "LAYOUT": {
