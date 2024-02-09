@@ -63,24 +63,24 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         XXXXXXX, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, XXXXXXX, XXXXXXX,
         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-        KC_LSFT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, RGB_TOG, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_RSFT, XXXXXXX,
-        KC_LCTL, KC_LALT,XXXXXXX, UC(2014), XXXXXXX, KC_RALT, KC_RCTL, XXXXXXX 
+        KC_LSFT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_RSFT, XXXXXXX,
+        KC_LCTL, KC_LALT,XXXXXXX, UC(0x2014), XXXXXXX, KC_RALT, KC_RCTL, XXXXXXX 
     ),
 };
 
 void keyboard_post_init_user(void) {
     /* Configure LEDs: Backlight used as caps lock indicator and RGB as underglow */
     backlight_level_noeeprom(0); // Set min backlight level
-    rgblight_sethsv_noeeprom(8, 255, 255); // Orange (H: 8, S: 255, V: 255)
-    rgblight_disable_noeeprom();
+    // rgblight_sethsv_noeeprom(8, 255, 255); // Orange (H: 8, S: 255, V: 255)
+    // rgblight_disable_noeeprom();
 }
 
-bool led_update_user(led_t led_state) {
-    if(led_state.caps_lock) {
-        backlight_level_noeeprom(31); // Set max backlight level
-    } else {
-        backlight_level_noeeprom(0); // Set min backlight level
-    }
+// bool led_update_user(led_t led_state) {
+//     if(led_state.caps_lock) {
+//         backlight_level_noeeprom(31); // Set max backlight level
+//     } else {
+//         backlight_level_noeeprom(0); // Set min backlight level
+//     }
 
-    return true;
-}
+//     return true;
+// }
